@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background: url(assets/wallpaper1.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 96px;
+}
+
+header .logo-1{
+    width: 150px;
+}
+
+.navigation ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.navigation ul li a {
+    color: aliceblue;
+    font-size: 18px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.6s;
+}
+
+.navigation ul li a:hover {
+    border-bottom: 2px solid #aa3304;
+}
+
+.navigation .search{
+    width: 22px;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+/*main*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50em;
+    margin-top: 1em;
+}
+
+main section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10em;
+}
+
+main section .logo{
+    width: 35em;
+    margin: 3em -6em;
+}
+
+main section .btn-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn-box .btn{
+    padding: 20px 45px;
+    background: #aa3304;
+    color: #FFFFFF;
+    margin-bottom: 2em;
+    border-bottom: 2px solid #FFFFFF;
+    transition: all 0.3s;
+}
+
+.btn-box .btn:hover{
+    background: #e04b10;
+}
+
+.btn-box .btn:focus{
+    background: #e04b10;
+}
+
+main section .text{
+    color: #FFFFFF;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-box2{
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    background: #aa3304;
+    padding: 15px 45px;
+    margin-top: 2em;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid #FFFFFF;
+    font-size: 25px;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-box2:hover{
+    background: #e04b10;
+}
+
+.btn-box2 .play{
+    width: 1.5em;
+}
+
+footer .cards{
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    margin-left: 23em;
+    margin-top: 1.5em;
+}
+
+footer .cards .card{
+    height: 180px;
+    max-width: 300px;
+    box-shadow: 12px 0px 32px 2px black;
+    margin-left: -120px;
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+footer .cards .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cards .card:hover{
+    transform: translateY(-16px) rotate(3deg);
+}
+
+.cards .card:hover ~.card{
+    transform: translateX(160px);
+}
